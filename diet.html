@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function handle(){
+            var element = document.getElementById("act");
+            element.classList.add("active");
+        }
+    </script>
+    <style>
+
+        
+        .section button{
+            color: yellow;
+        }
+        .section.active button{
+            color: green;
+        }
+    </style>
+         
+        
 </head>
 <body>
+    <!-- <button onclick="handle()">click</button>  -->
+    <div id="act" class="section">
+    <button onclick="handle()">click</button> 
+    
+    </div>  
+</body>
+    
+
+
+    
+
     <h1>sample diet</h1>
     <a href="index.html">home</a>
     <a href="training.html">training</a>

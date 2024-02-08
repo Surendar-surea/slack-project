@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+        margin: 10px;
+            flex-wrap: wrap;
+        }
+        .box.b1a{
+            background-color: green;
+        }
+        .box.b2a{
+            background-color: aquamarine;
+        }
+        .box.b3a{
+            background-color: sandybrown;
+        }
+    </style>
+
+<script>
+    function handle(){
+        var element=document.getElementById("b1");
+        element.classList.add("b1a");
+
+    }
+    function handlechange(){
+        var element=document.getElementById("b2");
+        element.classList.add("b2a");
+    }
+    function handlechange1(){
+        var element=document.getElementById("b3");
+        element.classList.add("b3a");
+    }
+</script><body>
+    <div class="boxes">
+        
+    <div class="box" id="b1"><button onclick="handle()"> click </button></div>
+    <div class="box" id="b2"><button onclick="handlechange()"> click </button></div>
+    <div class="box" id="b3"><button onclick="handlechange1()"> click </button></div>
+
+    </div>
+</body>
+</html>
